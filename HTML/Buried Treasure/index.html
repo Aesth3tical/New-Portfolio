@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find the Buried Treasure!</title>
+    </head>
+
+    <body>
+        <h1 id="heading">Find the Buried Treasure!</h1>
+
+        <img id="map" width="400" height="400"
+            src="./nyc.png">
+
+        <p id="distance"></p>
+
+        <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+        <script>
+            const width = 400;
+            const height = 400;
+            let clicks = 0;
+
+            const target = {
+                x: getRandomNumber(width),
+                y: getRandomNumber(height)
+            }
+            
+            function getRandomNumber(size) {
+                return Math.floor(Math.random() * size);
+            };
+
+            function getDistance(event, target) {
+                const diffX = event.offsetX - target.x;
+                const diffY = event.offsetY - target.y
+                return Math.sqrt((diffX * diffX) + (diffY * diffY));
+            }
+
+            function getDistanceHint(distance) {
+                if (distance < 10) {
+                    return 'Boiling hot!';
+                } if (distance < 20) {
+                    return 'Really hot';
+                } if (distance < 40) {
+                    return 'Hot';
+                } if (distance < 80) {
+                    return 'Warm';
+                } if (distance < 160) {
+                    return 'Cold';
+                } if (distance < 320) {
+                    return 'Really cold';
+                } else {
+                    return 'Freezing';
+                }
+            }
+
+            $('#map').click(function (event) {
+                clicks++;
+
+                const distance = getDistance(event, target);
+                const distanceHint = getDistanceHint(distance);
+                $('#distance').text(distanceHint);
+
+                if (distance < 8) {
+                    console.log('found')
+                    alert(`Found the treasure in ${clicks} clicks!`);
+                }
+            })
+        </script>
+    </body>
+</html>
