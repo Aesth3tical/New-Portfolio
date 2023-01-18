@@ -1,3 +1,4 @@
-# cpp-playground
+# Dan Perkins - Portfolio
+Hi employers so I decided to take all of my various coding projects and throw them into one big Github repo for those whom are interested to look through, note some of the folders contain just links to repositories containing the actual code for projects
 
-Collection of C++ Assignments written for my college class on the language, eventually I'll be moving each class into it's own folder since I'm having to take more than one
+**Note:** Not everything may be up to date with current skills
