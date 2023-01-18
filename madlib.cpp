@@ -2,6 +2,12 @@
 #include <string>
 using namespace std;
 
+/*
+  Dan Perkins
+  January 17th, 2023
+  Program to produce a mad lib from user input
+*/
+
 int getNum()
 {
   int num;
