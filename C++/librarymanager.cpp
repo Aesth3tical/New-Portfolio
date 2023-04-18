@@ -8,12 +8,18 @@
 */
 
 class memberType {
+    friend std::ostream& operator<<(std::ostream& os, const memberType& member) {
+        member.outputInfo(os);
+        return os;
+    }
+
     private:
         std::string firstName;
         std::string lastName;
         int memberID;
         int booksBought;
         double amountSpent;
+        std::string isbns[50];
 
     public:
         // Constructors
@@ -25,12 +31,15 @@ class memberType {
             amountSpent = 0.0;
         }
 
-        memberType(std::string first, std::string last, int id, int books, double amount) {
+        memberType(std::string first, std::string last, int id, int books, double amount, std::string isbnNums[]) {
             firstName = first;
             lastName = last;
             memberID = id;
             booksBought = books;
             amountSpent = amount;
+            for (int i = 0; i < 50; i++) {
+                isbns[i] = isbnNums[i];
+            }
         }
 
         // Getters
@@ -95,6 +104,19 @@ class memberType {
             std::cout << "Member ID: " << memberID << std::endl;
             std::cout << "Books Bought: " << booksBought << std::endl;
             std::cout << "Amount Spent: " << amountSpent << std::endl;
+        }
+
+        void outputInfo(std::ostream& os) const {
+            os << "First Name: " << firstName << std::endl;
+            os << "Last Name: " << lastName << std::endl;
+            os << "Member ID: " << memberID << std::endl;
+            os << "Books Bought: " << booksBought << std::endl;
+            os << "ISBNs of books bought: ";
+            for (int i = 0; i < booksBought; i++) {
+                os << isbns[i] << " ";
+            }
+            os << std::endl;
+            os << "Amount Spent: " << amountSpent << std::endl;
         }
 };
 
