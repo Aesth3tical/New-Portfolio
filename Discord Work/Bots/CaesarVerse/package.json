@@ -1,0 +1,19 @@
+{
+  "name": "caesarverse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon start",
+    "start": "npm i && node start",
+    "deploy": "node -e \"require('./registerCmds.js')()\" && npm run start"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "djsembedmanager": "^1.1.0",
+    "dotenv": "^16.0.3",
+    "mongoose": "^6.7.5",
+    "ms": "^2.1.3",
+    "path": "^0.12.7"
+  }
+}

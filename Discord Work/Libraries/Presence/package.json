@@ -1,0 +1,13 @@
+{
+  "name": "discord-rpc-template",
+  "version": "1.0.0",
+  "description": "Discord RPC template.",
+  "main": "rpc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
+  }
+}
