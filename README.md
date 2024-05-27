@@ -9,7 +9,7 @@ This repository contains the source code for various projects I've worked on ove
 - Proficient with **Git**, **GitHub**, **VSCode**, **Xcode**
 
 ## OS and Tools 💻
-> I primarily use MacOS as a development environment, however I have experience with both Windows and Linux as well. I use a variety of tools and software to develop, test, and deploy my projects, including but not limited to:
+I primarily use MacOS as a development environment, however I have experience with both Windows and Linux as well. I use a variety of tools and software to develop, test, and deploy my projects, including but not limited to:
 > - **VSCode** - My primary code editor
 > - **Xcode** - For iOS development
 > - **GitHub** - For version control and hosting my projects
@@ -23,7 +23,7 @@ This repository contains the source code for various projects I've worked on ove
 
 ## Contact 📧
 I can be reached at the following places:
-> 📥 Email: danielrperkins05@gmail.com
-> 🐦 X/Twitter: [@dan_pshift](https://x.com/dan_pshift)
-> 📷 Instagram: [@dan_perkins1](https://instagram.com/dan_perkins1)
-> 📌 Discord: aesthetical.
+> - 📥 Email: danielrperkins05@gmail.com
+> - 🐦 X/Twitter: [@dan_pshift](https://x.com/dan_pshift)
+> - 📷 Instagram: [@dan_perkins1](https://instagram.com/dan_perkins1)
+> - 📌 Discord: aesthetical.
