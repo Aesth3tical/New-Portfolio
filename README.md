@@ -23,7 +23,7 @@ I primarily use MacOS as a development environment, however I have experience wi
 
 ## Contact 📧
 I can be reached at the following places:
-> - 📥 Email: danielrperkins05@gmail.com
-> - 🐦 X/Twitter: [@dan_pshift](https://x.com/dan_pshift)
+> - 📥 Email: dan@devetical.com
+> - 🐦 X/Twitter: [@dp3rkins](https://x.com/dp3rkins)
 > - 📷 Instagram: [@dan_perkins1](https://instagram.com/dan_perkins1)
 > - 📌 Discord: aesthetical.
